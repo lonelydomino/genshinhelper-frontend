@@ -1,0 +1,6 @@
+.characters-container {
+    border: 3px solid rgb(0, 11, 161);
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}

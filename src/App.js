@@ -1,11 +1,10 @@
 import './App.css';
-import Clock from './components/Clock'
-import Domains from './components/Domains';
+import MainContainer from './Main Container/MainContainer';
+
 function App() {
   return (
     <div className="App">
-        <Clock />
-        <Domains />
+        <MainContainer />
     </div>
   );
 }
