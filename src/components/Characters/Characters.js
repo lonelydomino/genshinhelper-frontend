@@ -3,16 +3,18 @@ import { connect } from 'react-redux'
 import { useEffect } from 'react'
 import { fetchCharacters } from '../../actions/characterActions'
 import './Characters.css'
+import CharacterIcon from './CharacterIcon'
 const CharactersContainer = (props) => {
     useEffect(() => {
         props.fetchCharacters()
     }, []);
      return (
      <div className="characters-container">
-        {props.characters.map(character => <li key={character.id}>{character.name} - {character.rarity}</li>)}
+        {props.characters.map(character => <CharacterIcon character={character}/>)}
      </div>
      )
 }
+
 const mapStateToProps = (state) => {
     return {
         characters: state.characters.characters
