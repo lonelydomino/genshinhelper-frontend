@@ -10,6 +10,7 @@ const CharactersContainer = (props) => {
     }, []);
      return (
      <div className="characters-container">
+        <h1>Characters</h1>
         {props.characters.map(character => <CharacterIcon character={character}/>)}
      </div>
      )

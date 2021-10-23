@@ -43,7 +43,7 @@ class Clock extends React.Component{
     render() {
         return (
           <div className="clock-container">
-            <h1>Hello, world!</h1>
+            <h1>Genshin Helper</h1>
             <h2>It is {this.state.date.toLocaleTimeString()} {this.timeZone()}.</h2>
             <h2>Current date: {this.currentDate()}</h2>
           </div>
