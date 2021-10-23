@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import { fetchCharacters, sortCharacters } from '../../actions/characterActions'
 import './Characters.css'
 import CharacterIcon from './CharacterIcon'
+import DropDownMenu from './DropDownMenu'
 
 
 
@@ -16,7 +17,7 @@ const CharactersContainer = (props) => {
     }, []);
      return (
      <div className="characters-container">
-        <h1>Characters</h1><button onClick={props.sortCharacters}>Sort</button>
+        <h1>Characters</h1><DropDownMenu />
         {props.characters.map(character => <CharacterIcon character={character}/>)}
      </div>
      )
