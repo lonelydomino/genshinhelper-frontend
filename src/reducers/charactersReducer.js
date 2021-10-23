@@ -6,6 +6,15 @@ const charactersReducer = (state ={characters: [], loading:false}, action) => {
                 characters: [...state.characters],
                 loading: true
             }
+        case 'SORTING_CHARACTERS':
+
+            let array = state.characters.sort((a,b) => {
+                return (a.name > b.name) - (a.name < b.name)
+            })
+            return {
+                ...state,
+                characters: [...array]
+            }
         case 'ADD_CHARACTERS':
             return {
                 ...state,
