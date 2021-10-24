@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { useEffect, useState } from 'react'
-import { fetchCharacters, sortCharacters } from '../../actions/characterActions'
+import { fetchCharacters, sortCharactersAbc,sortCharactersElement,sortCharactersRarity } from '../../actions/characterActions'
 import './Characters.css'
 import CharacterIcon from './CharacterIcon'
 import DropDownMenu from './DropDownMenu'
@@ -31,7 +31,11 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
     return {
         fetchCharacters: () => dispatch(fetchCharacters()),
-        sortCharacters: () => dispatch(sortCharacters())
+        sortCharactersAbc: () => dispatch(sortCharactersAbc()),
+        sortCharactersRarity: () => dispatch(sortCharactersRarity()),
+        sortCharactersElement: () => dispatch(sortCharactersElement())
+
+
     }
 }
 export default connect(mapStateToProps, mapDispatchToProps)(CharactersContainer)

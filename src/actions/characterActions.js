@@ -9,8 +9,18 @@ export const fetchCharacters = () => {
     }
 
 }
-export const sortCharacters = () => {
+export const sortCharactersAbc = () => {
     return(dispatch) => {
-        dispatch({type: 'SORTING_CHARACTERS'})
+        dispatch({type: 'SORTING_CHARACTERS_ABC'})
+    }
+}
+export const sortCharactersElement = () => {
+    return(dispatch) => {
+        dispatch({type: 'SORTING_CHARACTERS_ELEMENT'})
+    }
+}
+export const sortCharactersRarity = () => {
+    return(dispatch) => {
+        dispatch({type: 'SORTING_CHARACTERS_RARITY'})
     }
 }
