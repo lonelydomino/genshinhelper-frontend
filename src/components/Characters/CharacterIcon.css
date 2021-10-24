@@ -7,3 +7,22 @@
     padding: 10px;
     margin: 15px;
 }
+
+.red {
+    background-color: rgb(255, 125, 19);
+}
+.blue {
+    background-color: rgb(127, 166, 218);
+}
+.yellow {
+    background-color: rgb(139, 131, 114);
+}
+.green {
+    background-color: rgb(150, 247, 150);
+}
+.white {
+    background-color: rgb(179, 243, 238);
+}
+.violet {
+    background-color: rgb(171, 130, 238);
+}
