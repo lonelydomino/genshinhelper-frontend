@@ -18,7 +18,7 @@ const CharactersContainer = (props) => {
      return (
      <div className="characters-container">
         <h1>Characters</h1><DropDownMenu />
-        {props.characters.map(character => <CharacterIcon character={character}/>)}
+        {props.characters.map(character => <CharacterIcon character={character} key={character.id}/>)}
      </div>
      )
 }

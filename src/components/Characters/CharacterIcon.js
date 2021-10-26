@@ -13,17 +13,17 @@ const characterColor = (character) => {
 
      switch(character.vision){
           case 'pyro':
-               return "character-icon red"
+               return "red"
           case 'cryo':
-               return "character-icon white"
+               return "white"
           case 'geo':
-               return "character-icon yellow"
+               return "yellow"
           case 'anemo':
-               return "character-icon green"
+               return "green"
           case 'hydro':
-               return "character-icon blue"
+               return "blue"
           case 'electro':
-               return "character-icon violet"     
+               return "violet"     
           default: return
      }
 }
@@ -31,9 +31,9 @@ const characterColor = (character) => {
 
 const CharacterIcon = (props) => {
      return (
-     <div className={characterColor(props.character)}>
-        <p>{props.character.name}</p>
-        {characterStars(props.character.rarity)}
+     <div className={"character-icon"}>
+        {/* {characterStars(props.character.rarity)} */}
+        <img className={"character-icon-image  " + characterColor(props.character)} src={props.character.image} alt={props.character.name}/>
      </div>
      )
 }

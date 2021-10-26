@@ -9,7 +9,7 @@ const Domains = (props) => {
    }, [])
      return (
         <div className="domains-container">
-            {props.domains.map(domain => <div>{domain.id} - {domain.name} - {domain.items.map(item => <li key={item.id}>{item.name}</li>)}</div>)}
+            {props.domains.map(domain => <div key={domain.id}>{domain.id} - {domain.name} - {domain.items.map(item => <li key={item.id}>{item.name}</li>)}</div>)}
         </div>
      )
 }
