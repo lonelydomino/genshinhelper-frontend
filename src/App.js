@@ -2,6 +2,7 @@ import './App.css';
 import MainContainer from './Main Container/MainContainer';
 import {auth} from './firebase';
 import {useAuthState} from 'react-firebase-hooks/auth';
+import background from './assets/images/bg1.jpeg'
 
 // import Login from './login';
 // import Mainpage from './main';
