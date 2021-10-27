@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border: 3px solid rgb(245, 115, 115);
+    /* border: 3px solid rgb(245, 115, 115); */
     align-items:baseline;
     padding: 10px;
     margin: 10px;

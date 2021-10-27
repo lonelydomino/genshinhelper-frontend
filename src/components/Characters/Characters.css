@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    border: 3px solid rgb(0, 11, 161);
+    /* border: 3px solid rgb(0, 11, 161); */
     width: 45%;
     justify-content: space-evenly;
     align-items: center;
@@ -12,4 +12,5 @@
     border-radius: 10px;
     margin: 20px;
     padding: 5px;
+    color: white;
 }
