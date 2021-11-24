@@ -5,9 +5,11 @@ import { fetchDomains } from '../../actions/domainActions'
 import './Domains.css'
 
 const getDomainsToday = (day, domains) =>{
-   let currentDomains = domains.filter(element => {
+      domains.filter(element => {
       debugger
+      return element
    })
+
 }
 
 
@@ -19,7 +21,7 @@ const Domains = (props) => {
    let domains = getDomainsToday(props.currentDay, props.domains)
      return (
         <div className="domains-container">
-            {props.domains.map(domain => <div key={domain.id}>{domain.id} - {domain.name} - {domain.items.map(item => <li key={item.id}>{item.name}</li>)}</div>)}
+            {/* {props.domains.map(domain => <div key={domain.id}>{domain.id} - {domain.name} - {domain.items.map(item => <li key={item.id}>{item.name}</li>)}</div>)} */}
         </div>
      )
 }
